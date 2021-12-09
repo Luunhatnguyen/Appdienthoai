@@ -1,0 +1,103 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS header */
+header > h1 {
+    text-align: center;
+    font-size: 56px;
+    text-shadow: 4px 5px lightblue;
+    color: blue;
+    animation: doimauchu ease-in .5s infinite;
+}
+@keyframes doimauchu {
+    from {
+        color:red;
+    }
+    to {
+        color:yellow;
+    }
+}
+/* CSS Nav  */
+
+nav{
+    background-color: aquamarine;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul.menu > li {
+    border-right: 1px solid blue;
+   min-width: 200px;
+   text-align: center;
+}
+ul.menu > li:last-child {
+    border-right: none;
+}
+ul.menu > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+}
+ul.menu > li > a:hover {
+    background-color: green;
+    color: yellow;
+}
+
+/* CSS Section */
+div.product {
+    width: 25%;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding:5px ;
+    margin:0.5%;
+}
+div.product > img {
+    width: 70%;
+    transition: transform ease-in-out 1s ;
+}
+div.product > img:hover {
+    transform: skew(-30deg);
+}
+
+div.info {
+    background: linear-gradient(lightblue,blue);
+    padding: 10px;
+    color: white;
+}
+div.products {
+    display: flex;
+}
+h1.subject{
+    background-color: blue;
+    color: white;
+    padding:10px;
+    border-radius: 10px 10px 0 0;
+    width: 25%;
+    margin-bottom: 0;
+    
+}
+div.line{
+    width: 100%;
+    height: 5px;
+    background-color: blue;
+}
+/* CSS Footer */
+
+footer > ul {
+    list-style-type: none;
+    color: blue;
+    padding: 0;
+}
+footer {
+    background-image: url(../images/Banner.jpg);
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:#e0e0e0;
+    
+}
